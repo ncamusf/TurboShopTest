@@ -1,0 +1,37 @@
+{
+  "name": "turboshop-marketplace",
+  "version": "1.0.0",
+  "description": "TurboShop Marketplace - Auto Parts Platform",
+  "private": true,
+  "scripts": {
+    "install:all": "cd client && npm install && cd ../functions && npm install",
+    "build:client": "cd client && npm run build",
+    "deploy": "npm run build:client && firebase deploy",
+    "deploy:hosting": "npm run build:client && firebase deploy --only hosting",
+    "deploy:functions": "firebase deploy --only functions",
+    "emulate": "npm run build:client && firebase emulators:start",
+    "logs": "firebase functions:log",
+    "logs:live": "firebase functions:log --only api",
+    "dev:client": "cd client && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "firebase:login": "firebase login",
+    "firebase:projects": "firebase projects:list",
+    "firebase:config": "firebase functions:config:get",
+    "firebase:info": "firebase projects:info"
+  },
+  "keywords": [
+    "marketplace",
+    "autoparts",
+    "firebase",
+    "react",
+    "express",
+    "nodejs"
+  ],
+  "author": "TurboShop Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
+

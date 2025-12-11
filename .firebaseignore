@@ -1,0 +1,49 @@
+# Firebase ignore file
+
+# Node modules
+**/node_modules/**
+
+# Git
+.git
+.gitignore
+
+# CI/CD
+.github
+
+# Source files
+backend/
+client/src/
+client/public/
+
+# Config files
+*.config.js
+*.config.ts
+.env*
+!.env.example
+
+# Documentation
+*.md
+!README.md
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Test files
+**/*.test.js
+**/*.spec.js
+test/
+tests/
+__tests__/
+
+# Build artifacts (except client/dist which is needed)
+backend/dist/
+functions/dist/
+
