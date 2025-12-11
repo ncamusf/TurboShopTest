@@ -22,11 +22,7 @@ turboShopTest/
 │   │   ├── hooks/       # Custom hooks
 │   │   └── services/    # Servicios API
 │   └── dist/            # Build de producción
-├── backend/             # Backend Express (desarrollo)
-│   └── src/
-│       ├── routes/      # Rutas API
-│       └── services/    # Lógica de negocio
-└── functions/           # Firebase Functions (producción)
+└── functions/           # Backend => Firebase Functions
     ├── routes/
     ├── services/
     └── index.js
@@ -62,14 +58,6 @@ npm run emulate
 ```
 
 ## 💻 Desarrollo Local
-
-### Backend (Express)
-
-```bash
-cd backend
-npm install
-npm run dev
-```
 
 El servidor estará en `http://localhost:3000`
 
@@ -116,12 +104,6 @@ La aplicación estará en `http://localhost:5173`
 
 ## 📊 Variables de Entorno
 
-### Backend (Firebase Functions)
-
-```bash
-firebase functions:config:set providers.base_url="https://web-production-84144.up.railway.app"
-```
-
 ### Frontend
 
 El frontend detecta automáticamente el entorno:
@@ -131,29 +113,10 @@ El frontend detecta automáticamente el entorno:
 ## 🧪 Testing
 
 ```bash
-# Backend
-cd backend
-npm test
-
 # Frontend
 cd client
 npm test
 ```
-
-## 📝 Documentación Adicional
-
-- [`API_DOCUMENTATION.md`](backend/API_DOCUMENTATION.md) - Documentación de la API
-- [`DEPLOYMENT.md`](backend/DEPLOYMENT.md) - Despliegue en Railway
-- [`TESTING.md`](backend/TESTING.md) - Guía de testing
-- [`FIREBASE_DEPLOYMENT.md`](FIREBASE_DEPLOYMENT.md) - Despliegue en Firebase
-
-## 🤝 Contribuir
-
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
 
 ## 📄 Licencia
 
