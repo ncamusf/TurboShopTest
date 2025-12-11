@@ -86,9 +86,9 @@ La aplicación estará en `http://localhost:5173`
 ## 📡 Endpoints API
 
 ### Producción (Firebase)
-- `https://your-project.web.app/api/health` - Health check
-- `https://your-project.web.app/api/catalog` - Catálogo
-- `https://your-project.web.app/api/products/:sku` - Detalle
+- `https://turboshoptest.web.app/api/health` - Health check
+- `https://turboshoptest.web.app/api/catalog` - Catálogo
+- `https://turboshoptest.web.app/api/products/:sku` - Detalle
 
 ### Desarrollo (Local)
 - `http://localhost:3000/api/health`
@@ -126,7 +126,7 @@ firebase functions:config:set providers.base_url="https://web-production-84144.u
 
 El frontend detecta automáticamente el entorno:
 - **Desarrollo**: `http://localhost:3000`
-- **Producción**: URL de Firebase Functions
+- **Producción**: `https://turboshoptest.web.app/`
 
 ## 🧪 Testing
 
